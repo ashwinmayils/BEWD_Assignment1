@@ -72,11 +72,6 @@
     <a href='delete.php?id=<?php echo $row['id']; ?>'>Delete</a>
 </p>
 
-<?php 
-            // this willoutput all the data from the array
-            //echo '<pre>'; var_dump($row); 
-        ?>
-
 <hr>
 <?php }; //close the foreach
 

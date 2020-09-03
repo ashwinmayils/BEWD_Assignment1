@@ -10,7 +10,6 @@
     <meta charset="UTF-8">
 
     <!-- Font from fonts.google.com-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
     <!-- BootStrap style sheets -->
