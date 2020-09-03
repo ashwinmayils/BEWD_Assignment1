@@ -1,4 +1,5 @@
 <?php 
+ob_start();
 	
     // include the config file that we created before
     require "../config.php"; 

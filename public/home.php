@@ -1,4 +1,6 @@
-<?php include "templates/header.php"; ?>
+<?php 
+ob_start();
+include "templates/header.php"; ?>
 
     <!-- Main Title and Content-->
         <div>
