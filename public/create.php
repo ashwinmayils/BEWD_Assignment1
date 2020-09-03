@@ -1,6 +1,5 @@
-
+<?php ob_start();?>
 <?php
-ob_start();
 // this code will only execute after the submit button is clicked
 if (isset($_POST['submit'])) {
 // include the config file that we created before
