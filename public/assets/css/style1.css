@@ -1,0 +1,434 @@
+body, html {
+  margin: 0; 
+  color: black;
+  overflow-x: hidden;
+}
+
+#readmore {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: 2px solid white;
+}
+
+#mainImageBG {
+    background-image: url(assets/images/backdrop.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+}
+
+.MainTitle {
+  color: white;
+  font-size: 7vw;
+  font-family: 'Playfair Display', sans-serif; 
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.subMainTitle{
+  font-size: 3vw;
+  font-family: 'Playfair Display', sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.subHeading {
+  font-size: 2vw;
+  font-family: 'Playfair Display', sans-serif;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover {
+  color: lightgray;
+  text-decoration: none;
+}
+
+img {
+  margin-top: 0%;
+  line-height: 0%;
+  width: 100%;
+  height: 300px;
+}
+
+.img2 {
+  margin-top: 0%;
+  line-height: 0%;
+  width: 100%;
+  height: 300px;
+  box-shadow: inset 0 0 5 5px white;
+}
+
+.img3 {
+  margin-top: 0%;
+  line-height: 0%;
+  width: 100%;
+  height: 300px;
+}
+
+figure:hover > figcaption {
+  visibility:visible;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  filter: blur(0px);
+  transition: filter 1s ease-in;
+}
+
+figcaption {
+  background: rgba(22, 22, 22, 0.4);
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  padding-top: 10%;
+  visibility: hidden;
+}
+
+.figtext {
+  height: 100%;
+  width: 100%;
+  font-family: 'Playfair Display', sans-serif;  
+  font-size: 1.15em;
+  text-align: center;
+  color: white;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 2px;
+  position: absolute;
+  padding-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+
+nav {
+  position: fixed;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  transform: translate(-50,-50%);
+  display: flex;
+  padding: 2px 2px 5px 5px;
+  margin-bottom: 0;
+}
+
+.navLink {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 25px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#myTopNav{
+  margin-bottom: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 5px;
+  font-size: 22px;
+  margin: 0px 10px;
+  text-decoration: none;
+  color: white;
+  box-shadow: #000000;
+}
+
+.navbar .icon {
+  display: none;
+  
+}
+
+.on {
+  box-sizing: border-box;
+  text-decoration-line: underline;
+}
+
+.navbar a:hover:not(.on) {
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: inset 0 0 0 3px grey;
+  color: white;
+
+}
+
+#iframe1{
+  float: left;
+  width: 50%;
+  height: 400px;
+}
+
+#iframe2 {
+  float: right;
+  width: 50%;
+  height: 400px;
+}
+
+#iframe3 {
+width: 100%;
+height: 400px;
+}
+
+.background {
+  margin: 0;
+  background-color: black;
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Playfair Display', sans-serif; 
+  text-align: center;
+  color: white;
+}
+
+.backT{
+  opacity: 0.5;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-family: 'Playfair Display', sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+
+}
+
+.links{
+  text-decoration: none;
+  color: #4E4E50;
+}
+
+.navn{
+  overflow: hidden;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50,-50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+  position: sticky;
+  overflow: hidden;
+}
+
+.backdrop {
+    height: 320px;
+    width: 100%;
+    background-color: rgb(255,255,255);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('assets/images/backdrop.jpg');
+}
+
+.glasses2{
+  height: 320px;
+  width: 100%;
+  background-size: cover;    
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/glasses.jpg');
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  font: normal 20px;
+  letter-spacing: 5px;
+  font-family: 'Playfair Display', sans-serif;
+  padding: 45px 50px;
+  padding-top: 80px;
+}
+
+.footer .footer-left p {
+  color: white;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 10px;
+  padding: 10px;
+}
+
+.footer p.footer-links a {
+  display: inline-block;
+  line-height: 2;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 200;
+  padding-top: 10px;
+}
+
+.footer .footer-right {
+  float: right;
+  margin-top: 10px;
+  max-width: 180px;
+}
+
+.footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 2px;
+  
+  font-size: 20px;
+  color: #33383b;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
+/* Nav Hamgburger didnt work as intended*/
+
+  @media screen and (max-width: 300px) {
+     .navbar a:not(:first-child) {display: none;}
+     .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 10px;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+
+/* Mobile Phones */
+  @media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+}
+
+
+  @media (max-width: 768px) {
+  #iframe1, #iframe2 {
+      width: 100%;
+
+  }
+}
+
+/* Responsive Footer and Site Page */
+@media screen and (max-width: 600px) {
+  .footer .footer-left,
+  .footer .footer-right {
+    text-align: center;
+  }
+
+  .footer .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer .footer-left p.footer-links {
+    line-height: 1.7;
+  }
+}
+
+
+input[type=text], select, textarea {
+  width: 25%;
+  font-family: 'Playfair Display', sans-serif;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+label {
+  color: rgb(230, 230, 230);
+}
+
+.input{
+  font-family: 'Playfair Display', sans-serif;
+  background-color: black;
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.formContainer {
+  font-family: 'Playfair Display', sans-serif;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
