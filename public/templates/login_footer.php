@@ -12,12 +12,6 @@
             
         </div>
         
-        <h3 class="footer-left">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to the site!</h3>
-
-        <!-- Logout & Reset Password -->
-        <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
-        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
-        
         <!-- Copy Right and Contact Us Page Link -->
         <div class="footer-left">
             <p class="archivo">Back End Web Development | 2020 | Ashwin Mayilvahanan</p>
