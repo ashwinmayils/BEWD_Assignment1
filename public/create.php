@@ -36,22 +36,23 @@ $statement->execute($new_recipe);
 
 <?php include "templates/header.php"; ?>
 
-<h2>Add a Recipe</h2>
+<h2 class="subMainTitle">Add a Recipe</h2>
 
 <?php if (isset($_POST['submit']) && $statement) { ?>
-<p>Recipe successfully added.</p>
+<p class="subtitle">Recipe successfully added!</p>
 <?php } ?>
 
-<form method="post">
-<label for="recipename">Recipe Name</label> 
-<input type="text" name="recipename" id="recipename"> 
-<label for="ingredients">Ingredients</label> 
-<input type="text" name="ingredients" id="ingredients"> 
-<label for="recipe">Recipe</label> 
-<input type="text" name="recipe" id="recipe"> 
-<label for="difficulty">Difficulty</label> 
-<input type="text" name="difficulty" id="difficulty"> 
-<input type="submit" name="submit" value="Submit">
+<form method="post" class="subHeading">
+<label for="recipename">Recipe Name:</label> 
+<input class="subHeading2" type="text" name="recipename" id="recipename">
+<label for="ingredients">Ingredients:</label> 
+<input class="subHeading2" type="text" name="ingredients" id="ingredients"><br> 
+<label for="recipe">Recipe:</label> 
+<input class="subHeading2" type="text" name="recipe" id="recipe">
+<label for="difficulty">Difficulty:</label> 
+<input class="subHeading2" type="text" name="difficulty" id="difficulty"><br> 
+<input class="subHeading2" type="submit" name="submit" value="Submit">
 </form>
+
 
 <?php include "templates/footer.php"; ?>

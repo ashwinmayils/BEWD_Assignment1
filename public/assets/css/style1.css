@@ -4,12 +4,6 @@ body, html {
   overflow-x: hidden;
 }
 
-#readmore {
-  background: rgba(255, 255, 255, 0);
-  color: white;
-  border: 2px solid white;
-}
-
 #mainImageBG {
     background-image: url(assets/images/backdrop.jpg);
     background-size: cover;
@@ -17,28 +11,24 @@ body, html {
     height: 100%;
 }
 
-figure {
-  height: 100%;
-  position: relative;
-}
-
-.container {
-  position: relative;
-  text-align: center;
-  max-width: 100%;
+.login_wrapper {
+  color: white;
+  font: 14px;
+  width: 350px;
+  padding: 20px;
 }
 
 .MainTitle {
   color: white;
   font-size: 7vw;
-  font-family: 'Playfair Display', sans-serif; 
+  font-family: 'Questrial', sans-serif; 
   text-align: center;
   letter-spacing: 5px;
 }
 
 .subMainTitle{
   font-size: 3vw;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   text-align: center;
   color: white;
   letter-spacing: 5px;
@@ -46,10 +36,17 @@ figure {
 
 .subHeading {
   font-size: 2vw;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   text-align: center;
-  color: white;
-  height: 100%;
+  color: rgb(255, 255, 255);
+  height: auto;
+}
+
+.subHeading2 {
+  font-size: 2vw;
+  font-family: 'Questrial', sans-serif;
+  color: rgb(0, 0, 0);
+  height: auto;
 }
 
 button a{
@@ -60,70 +57,6 @@ button a{
 button a:hover {
   color: lightgray;
   text-decoration: none;
-}
-
-img {
-  margin-top: 0%;
-  line-height: 0%;
-  width: 100%;
-  height: 300px;
-}
-
-.img2 {
-  margin-top: 0%;
-  line-height: 0%;
-  width: 100%;
-  height: 300px;
-  box-shadow: inset 0 0 5 5px white;
-}
-
-.img3 {
-  margin-top: 0%;
-  line-height: 0%;
-  width: 100%;
-  height: 300px;
-}
-
-figure:hover > figcaption {
-  visibility:visible;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  filter: blur(0px);
-  transition: filter 1s ease-in;
-}
-
-figcaption {
-  background: rgba(22, 22, 22, 0.4);
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  color: white;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  position: absolute;
-  padding-top: 10%;
-  visibility: hidden;
-}
-
-.figtext {
-  height: 100%;
-  width: 100%;
-  font-family: 'Playfair Display', sans-serif;  
-  font-size: 1.15em;
-  text-align: center;
-  color: white;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 2px;
-  position: absolute;
-  padding-top: 20%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 10%;
 }
 
 nav {
@@ -153,7 +86,7 @@ nav {
   display: block;
   text-align: center;
   text-decoration: none;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 25px;
   margin: 0px 10px;
   text-decoration: none;
@@ -170,7 +103,7 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   letter-spacing: 5px;
   font-size: 22px;
   margin: 0px 10px;
@@ -197,23 +130,6 @@ nav {
 
 }
 
-#iframe1{
-  float: left;
-  width: 50%;
-  height: 400px;
-}
-
-#iframe2 {
-  float: right;
-  width: 50%;
-  height: 400px;
-}
-
-#iframe3 {
-width: 100%;
-height: 400px;
-}
-
 .background {
   margin: 0;
   background-color: black;
@@ -221,7 +137,7 @@ height: 400px;
 
 .title {
   font-size: 60px;
-  font-family: 'Playfair Display', sans-serif; 
+  font-family: 'Questrial', sans-serif; 
   text-align: center;
   color: white;
 }
@@ -231,12 +147,10 @@ height: 400px;
 }
 
 .subtitle {
-  font-size: 30px;
-  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.8vw;
+  font-family: 'Questrial', sans-serif;
   text-align: center;
   color: white;
-  letter-spacing: 1px;
-
 }
 
 .links{
@@ -261,22 +175,21 @@ height: 400px;
 .backdrop {
     height: 320px;
     width: 100%;
-    background-color: rgb(255,255,255);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('assets/images/backdrop.jpg');
+    background-image: url('../images/bg.jpg');
 }
 
-.glasses2{
-  height: 320px;
+.backdrop2{
+  height: 50px;
   width: 100%;
   background-size: cover;    
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('../images/glasses.jpg');
+  background-image: url('../images/bg.jpg');
 }
 
 .footer {
@@ -284,8 +197,8 @@ height: 400px;
   width: 100%;
   text-align: right;
   font: normal 20px;
-  letter-spacing: 5px;
-  font-family: 'Playfair Display', sans-serif;
+  letter-spacing: 1.5px;
+  font-family: 'Questrial', sans-serif;
   padding: 45px 50px;
   padding-top: 80px;
 }
@@ -332,8 +245,6 @@ height: 400px;
   line-height: 35px;
   margin-left: 3px;
 }
-
-/* Nav Hamgburger didnt work as intended*/
 
   @media screen and (max-width: 300px) {
      .navbar a:not(:first-child) {display: none;}
@@ -401,7 +312,7 @@ height: 400px;
 
 input[type=text], select, textarea {
   width: 25%;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   padding: 15px;
   border: 1px solid black;
   border-radius: 10px;
@@ -411,24 +322,12 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-label {
-  color: rgb(230, 230, 230);
-}
-
 .input{
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Questrial', sans-serif;
   background-color: black;
   color: black;
   padding: 15px 20px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
-}
-
-.formContainer {
-  font-family: 'Playfair Display', sans-serif;
-  border-radius: 10px;
-  background-color: white;
-  padding: 20px;
-  width: 100%;
 }

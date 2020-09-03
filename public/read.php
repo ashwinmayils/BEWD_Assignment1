@@ -36,25 +36,21 @@ if (isset($_POST['submit'])) {
     if (isset($_POST['submit'])) {
         //if there are some results
         if ($result && $statement->rowCount() > 0) { ?>
-<h2>Results</h2>
+<h2 class="subMainTitle">Results</h2>
 
 <?php 
                 // This is a loop, which will loop through each result in the array
                 foreach($result as $row) { 
             ?>
 
-<p>
-    ID:
-    <?php echo $row["id"]; ?><br> Recipe Name:
-    <?php echo $row['recipename']; ?><br> Ingredients:
-    <?php echo $row['ingredients']; ?><br> Recipe:
-    <?php echo $row['recipe']; ?><br> Difficulty:
+<p class="subtitle">
+    <b>ID:</b>
+    <?php echo $row["id"]; ?><br><b>Recipe Name:</b>
+    <?php echo $row['recipename']; ?><br><b>Ingredients:</b>
+    <?php echo $row['ingredients']; ?><br><b>Recipe:</b>
+    <?php echo $row['recipe']; ?><br><b>Difficulty:</b>
     <?php echo $row['difficulty']; ?><br>
 </p>
-<?php 
-            // this willoutput all the data from the array
-            //echo '<pre>'; var_dump($row); 
-        ?>
 
 <hr>
 <?php }; //close the foreach
@@ -62,11 +58,9 @@ if (isset($_POST['submit'])) {
     }; 
 ?>
 
+<form method="post" class="subHeading">
 
-
-<form method="post">
-
-    <input type="submit" name="submit" value="View all">
+    <input class="subHeading2" type="submit" name="submit" value="View all">
 
 </form>
 

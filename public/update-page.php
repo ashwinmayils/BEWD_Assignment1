@@ -80,26 +80,30 @@
     }
 ?>
 
-<form method="post">
+<?php include "templates/header.php"; ?>
+
+<form method="post" class="subHeading">
     
-    <label for="id">ID</label>
-    <input type="text" name="id" id="id" value="<?php echo escape($work['id']); ?>" >
+    <label for="id">ID:</label>
+    <input class="subHeading2" type="text" name="id" id="id" value="<?php echo escape($work['id']); ?>" >
     
-    <label for="recipename">Recipe Name</label>
-    <input type="text" name="recipename" id="recipename" value="<?php echo escape($work['recipename']); ?>">
+    <label for="recipename">Recipe Name:</label>
+    <input class="subHeading2" type="text" name="recipename" id="recipename" value="<?php echo escape($work['recipename']); ?>">
+    <br>
+    <label for="ingredients">Ingredients:</label>
+    <input class="subHeading2" type="text" name="ingredients" id="ingredients" value="<?php echo escape($work['ingredients']); ?>">
 
-    <label for="ingredients">Ingredients</label>
-    <input type="text" name="ingredients" id="ingredients" value="<?php echo escape($work['ingredients']); ?>">
-
-    <label for="recipe">Recipe</label>
-    <input type="text" name="recipe" id="recipe" value="<?php echo escape($work['recipe']); ?>">
-
-    <label for="difficulty">Difficulty</label>
-    <input type="text" name="difficulty" id="difficulty" value="<?php echo escape($work['difficulty']); ?>">
+    <label for="recipe">Recipe:</label>
+    <input class="subHeading2" type="text" name="recipe" id="recipe" value="<?php echo escape($work['recipe']); ?>">
+    <br>
+    <label for="difficulty">Difficulty:</label>
+    <input class="subHeading2" type="text" name="difficulty" id="difficulty" value="<?php echo escape($work['difficulty']); ?>">
     
-    <label for="date">Date Added</label>
-    <input type="text" name="date" id="date" value="<?php echo escape($work['date']); ?>">
-
-    <input type="submit" name="submit" value="Save">
+    <label for="date">Date Added:</label>
+    <input class="subHeading2" type="text" name="date" id="date" value="<?php echo escape($work['date']); ?>">
+    <br>
+    <input class="subHeading2" type="submit" name="submit" value="Save">
 
 </form>
+
+<?php include "templates/footer.php"; ?>

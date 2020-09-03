@@ -1,17 +1,3 @@
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: index.php");
-    exit;
-}
- 
-// Include config file
-require_once "../config.php";
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -38,23 +24,4 @@ require_once "../config.php";
 </head>
 
 <body class="background">
-    <!-- Navigation -->
-    <header>
-        <div class="navbar" id="myTopNav">
-            <div class="navLink">
-                <a href="home.php">Home</a>
-                <a href="create.php">Add Recipes</a>
-                <a href="read.php">Find Recipes</a>
-                <a href="update.php">Edit Recipes</a>
-                <a href="delete.php">Remove Recipes</a>
-
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <div class=backdrop></div>
-    
-    
+<div class=backdrop></div>

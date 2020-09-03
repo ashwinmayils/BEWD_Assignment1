@@ -70,8 +70,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     unset($pdo_connection);
 }
 ?>
- 
-<!DOCTYPE html>
+<?php include "templates/login_header.php"; ?>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -82,8 +83,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .wrapper{ width: 350px; padding: 20px; }
     </style>
 </head>
-<body>
-    <div class="wrapper">
+<body> -->
+    <div class="login_wrapper">
         <h2>Reset Password</h2>
         <p>Please fill out this form to reset your password.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
@@ -99,9 +100,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Submit">
-                <a class="btn btn-link" href="welcome.php">Cancel</a>
+                <a class="btn btn-link" href="home.php">Cancel</a>
             </div>
         </form>
     </div>    
-</body>
-</html>
+<?php include "templates/footer.php"; ?> 
